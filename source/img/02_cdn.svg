@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="aRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d9534f"/></marker>
+    <marker id="aGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2e8b57"/></marker>
+    <marker id="aGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+    <g id="server">
+      <rect x="-40" y="-35" width="80" height="70" rx="6" fill="#6b7a8a" stroke="#3d4650" stroke-width="2"/>
+      <line x1="-28" y1="-18" x2="28" y2="-18" stroke="#dfe6ee" stroke-width="3"/>
+      <line x1="-28" y1="-4" x2="28" y2="-4" stroke="#dfe6ee" stroke-width="3"/>
+      <line x1="-28" y1="10" x2="28" y2="10" stroke="#dfe6ee" stroke-width="3"/>
+      <circle cx="24" cy="24" r="4" fill="#7CFC00"/>
+    </g>
+    <g id="edge">
+      <rect x="-32" y="-26" width="64" height="52" rx="5" fill="#e8a033" stroke="#a86d14" stroke-width="2"/>
+      <line x1="-20" y1="-10" x2="20" y2="-10" stroke="#fff3dd" stroke-width="3"/>
+      <line x1="-20" y1="2" x2="20" y2="2" stroke="#fff3dd" stroke-width="3"/>
+      <circle cx="18" cy="16" r="3.5" fill="#7CFC00"/>
+    </g>
+    <g id="user">
+      <circle cx="0" cy="-14" r="14" fill="#3b6ea5"/>
+      <path d="M-24,26 Q-24,4 0,4 Q24,4 24,26 z" fill="#3b6ea5"/>
+    </g>
+  </defs>
+
+  <!-- ===== Levi panel: bez CDN-a ===== -->
+  <rect x="5" y="5" width="580" height="550" rx="16" fill="#fff" fill-opacity="0.85" stroke="#c9d3dd" stroke-width="2"/>
+  <text x="295" y="45" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">Bez CDN-a</text>
+
+  <use href="#server" x="295" y="120"/>
+  <text x="295" y="182" text-anchor="middle" font-size="17" fill="#333">Izvorni server (SAD)</text>
+
+  <line x1="275" y1="195" x2="105" y2="420" stroke="#d9534f" stroke-width="4" marker-end="url(#aRed)"/>
+  <line x1="295" y1="195" x2="295" y2="420" stroke="#d9534f" stroke-width="4" marker-end="url(#aRed)"/>
+  <line x1="315" y1="195" x2="485" y2="420" stroke="#d9534f" stroke-width="4" marker-end="url(#aRed)"/>
+  <text x="150" y="300" text-anchor="end" font-size="20" font-weight="bold" fill="#d9534f">~120 ms</text>
+  <text x="305" y="330" font-size="20" font-weight="bold" fill="#d9534f">~150 ms</text>
+  <text x="440" y="300" font-size="20" font-weight="bold" fill="#d9534f">~130 ms</text>
+
+  <use href="#user" x="95" y="460"/>
+  <use href="#user" x="295" y="460"/>
+  <use href="#user" x="495" y="460"/>
+  <text x="95" y="510" text-anchor="middle" font-size="18" fill="#333">Novi Sad</text>
+  <text x="295" y="510" text-anchor="middle" font-size="18" fill="#333">Tokio</text>
+  <text x="495" y="510" text-anchor="middle" font-size="18" fill="#333">São Paulo</text>
+  <text x="295" y="540" text-anchor="middle" font-size="15" fill="#666">svaki zahtev ide preko pola sveta, a izvor nosi sav saobraćaj</text>
+
+  <!-- ===== Desni panel: sa CDN-om ===== -->
+  <rect x="615" y="5" width="580" height="550" rx="16" fill="#fff" fill-opacity="0.85" stroke="#c9d3dd" stroke-width="2"/>
+  <text x="905" y="45" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">Sa CDN-om</text>
+
+  <use href="#server" x="905" y="120"/>
+  <text x="905" y="182" text-anchor="middle" font-size="17" fill="#333">Izvorni server (SAD)</text>
+
+  <line x1="885" y1="195" x2="715" y2="282" stroke="#888" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#aGray)"/>
+  <line x1="905" y1="195" x2="905" y2="282" stroke="#888" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#aGray)"/>
+  <line x1="925" y1="195" x2="1095" y2="282" stroke="#888" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#aGray)"/>
+
+  <use href="#edge" x="705" y="315"/>
+  <use href="#edge" x="905" y="315"/>
+  <use href="#edge" x="1105" y="315"/>
+  <text x="705" y="360" text-anchor="middle" font-size="15" fill="#a86d14">edge Beograd</text>
+  <text x="905" y="360" text-anchor="middle" font-size="15" fill="#a86d14">edge Tokio</text>
+  <text x="1105" y="360" text-anchor="middle" font-size="15" fill="#a86d14">edge São Paulo</text>
+
+  <line x1="705" y1="368" x2="705" y2="420" stroke="#2e8b57" stroke-width="4" marker-end="url(#aGreen)"/>
+  <line x1="905" y1="368" x2="905" y2="420" stroke="#2e8b57" stroke-width="4" marker-end="url(#aGreen)"/>
+  <line x1="1105" y1="368" x2="1105" y2="420" stroke="#2e8b57" stroke-width="4" marker-end="url(#aGreen)"/>
+  <text x="722" y="402" font-size="18" font-weight="bold" fill="#2e8b57">~10 ms</text>
+  <text x="922" y="402" font-size="18" font-weight="bold" fill="#2e8b57">~10 ms</text>
+  <text x="1122" y="402" font-size="18" font-weight="bold" fill="#2e8b57">~10 ms</text>
+
+  <use href="#user" x="705" y="460"/>
+  <use href="#user" x="905" y="460"/>
+  <use href="#user" x="1105" y="460"/>
+  <text x="705" y="510" text-anchor="middle" font-size="18" fill="#333">Novi Sad</text>
+  <text x="905" y="510" text-anchor="middle" font-size="18" fill="#333">Tokio</text>
+  <text x="1105" y="510" text-anchor="middle" font-size="18" fill="#333">São Paulo</text>
+  <text x="905" y="540" text-anchor="middle" font-size="15" fill="#666">isprekidano: izvor se kontaktira samo pri <tspan font-style="italic">cache miss</tspan>-u</text>
+</svg>

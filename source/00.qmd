@@ -1,0 +1,126 @@
+---
+title: "Uvod"
+subtitle: "Informacije o predmetu"
+author: "dr Nebojša Horvat"
+date: "Septembar 2026"
+date-format: "MMMM YYYY"
+lang: sr
+format:
+  revealjs:
+    theme: sky
+    transition: slide
+    slide-number: true
+    chalkboard: true
+    controls: true
+    progress: true
+    history: true
+    center: true
+    hash: true
+---
+
+# Servisne informacije
+Opšti podaci o predmetu.
+
+## Malo o predavaču
+
+- dr Nebojša Horvat
+- Sedim u NTP 328 kancelariji.
+- Konultacije se zakazuje mejlom.
+- Možemo da se čujemo i online, ukoliko Vam ne odgovara da dolazite u kancelariju.
+
+## Malo o istoriji predmeta
+
+- Predavanja je u prošlosti držao dr Veljko Petrović.
+- Materijali koji će se koristit na predmetu su velikim delom nasleđe dr Veljka Petrovića.
+- Originalni materijali su dostupni na [https://pveljko-ftn.github.io/predavanja-CC/]
+- U odnosu na originalne materijale, slajdovi su prošireni i inkrementalno će se dorađivati.
+
+## Kontaktiranje - elektronska pošta
+
+- Najbolje me je tražiti na nebojsa.horvat@uns.ac.rs
+- Obično ažurno odgovara na mejlove
+- Ako ste zabrinuti da vam nisam video poruku, slobodno je šaljite opet.
+
+## Šta je Računarstvo u Oblaku
+- U pitanju je kalk engleskog 'Cloud Computing.'
+- Očekujte da koristimo 'Cloud Computing' u velikoj meri ovde i još češće skraćenicu CC
+- Kakav oblak?
+  - Na mrežnim dijagramima se često spoljašnja mreža, najčešće internet, predstavlja kao stilizovani crtež oblaka.
+- Odatle je oblak postao neka vrsta metonimije za računarske sisteme koji su, fizički, 'tamo negde' i povezani spoljašnjom mrežom.
+
+## Šta je cilj predmeta {.smaller}
+
+- Cilj predmeta nije toliko da naučite da koristite nečiji servis CC-a
+- Na tržištu ima neverovatan broj 'oblaka' i svaki ima svoje specifičnosti i svoju dokumentaciju
+- Nas to ovde toliko ne zanima
+- Umesto toga trudimo se da naučimo, koliko možemo, kako funkcionišu oblaci i opštije kako pisati sisteme koji su ekstremno distribuirani.
+- Kada savladamo osnovne koncepte CC, druga polovina predmeta će se fokusirati na praktične probleme i primene u različitim oblastima.
+- Moj "North Star" je da vam predmet pomogne da razumete CC i vam bude priprema za system design intervju.
+
+## Sadrzaj predmeta (deo prvi)
+- Uvod (šta je računarstvo u oblaku)
+- Tehnologije - mreže, virtualizacija, kontejneri
+- Orkestracija - K8s
+- Mehanizmi - skladištenje, skaliranje, balansiranje
+
+## Sadrzaj predmeta (deo drugi)
+- Bezbednost - ubrzana verzija
+- Arhitekture - najbolje prakse
+- Ključni koncepti pri dizajniranju sistema - CAP, izbor baze, redovi, keširanje, komunikacija
+- Praktične probleme i njihova rešenja - simulacija system design intervjua
+
+## Literatura
+
+- Dokumentacija, ovi slajdovi, i beleške sa predavanja bi trebali da budu sasvim dovoljni.
+
+## O slajdovima
+- Slajdovi su novi za ovu generaciju i predstavljaju proširenu verziju slajdova ranijih godina
+- Promenila se i tehnologija slajdova koji se sada generišu kao ovi interaktivni sajtovi. Mogu se, na zahtev dobiti i u drugoj formi: PDF, PPTX, ili Markdown izvorni kod
+
+## Kako se polaže?
+- Predispitne obaveze nose 70 bodova
+- Kako te bodove stičete čućete na vežbama
+- Ispit nosi 30 bodova
+- Te bodove stičete na klasičnom ispitu koji će gotovo sigurno biti usmen i pokrivaće gradivo koje ste radili na predmetu.
+
+## Dva tipa usmenog ispita?
+- Možete da birate da li želite da polažete lakši ili teži usmeni
+- Lakši usmeni je za ocene 6, 7, 8 ili 9
+- Teži usmeni je za ocenu 10
+- Lakši usmeni će sadržati dva teorijska pitanja iz gradiva rađenog na vežbama
+- Teži uzmeni će biti u obliku sistem dizajn intervjua
+
+## Infrastruktura
+- Budući da je predmet zahtevan, nemamo baš najbolju moguću podršku u laboratorijama fakulteta
+- Trebaće vam `Linux` idealno najsvežija `Fedora` ili `Ubuntu` bilo direktno instaliran, bilo u virtuelnoj mašini.
+- Dosta posla će se raditi iz komandne linije.
+- Naš primarni jezik će uglavnom biti `Python`
+- Najvažniji alati su Docker, Kubernetes
+- Sav naš alat će biti Open Source
+
+## Raspored gradiva po nedeljama {.smaller}
+| Nedelja | Datum |Predavanje | 
+|---------|------------|-----------------------------------------|
+| 1 | 06. 10.| 00 Predmet — upoznavanje sa predmetom |  
+| 2 | 13. 10.| 01 Uvod — pojam, motivacija, istorija |  
+| 3 | 20. 10.| 02 Tehnologije — mreže, okruženje | 
+| 4 | 27. 10.| 03 Tehnologije — virtualizacija, kontejneri | 
+| 5 | 03. 11.| 04 Orkestracija — kubernetes (K8s) |  
+
+
+## Raspored gradiva po nedeljama {.smaller}
+| Nedelja | Datum |Predavanje | 
+|---------|------------|-----------------------------------------|
+| 6 | 10. 11.| 05 Mehanizmi — obod, skladištenje |  
+| 7 | 17. 11.| xx Gostujuće pardavanje — K8s | 
+| 8 | 24. 11.| 06 Mehanizmi — skaliranje, balansiranje |  
+| 9 | 01. 12.| 07 Arhitekture — osnovne, napredne, specijalizovane i najbolje prakse |  
+| 10 | 08. 12.| 08 Dizajn sistema (Ponavljanje) - CAP, izbor baze, replikacija, shard | 
+
+## Raspored gradiva po nedeljama {.smaller}
+| Nedelja | Datum |Predavanje | 
+|---------|------------|-----------------------------------------|
+| 11 | 15. 12.| 09 Dizajn sistema — performanse, protok, keširanje, redovi, object storage |  
+| 12 | 22. 12.| 10 Radionica dizajna 1 — URL shortener / payment provider    | 
+| 13 | 29. 12.| 11 Radionica dizajna 2 - tickets / youtube / chat       |  
+| 14 | 12. 01.| xx Format ispitnog pitanja  | 
